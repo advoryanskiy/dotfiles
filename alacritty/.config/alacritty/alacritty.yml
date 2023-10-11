@@ -1,0 +1,42 @@
+env:
+  TERM: xterm-256color
+
+live_config_reload: true
+
+shell:
+  program: /bin/zsh 
+  args:
+    - -c
+    - /usr/local/bin/tmux new -A -s main
+
+scrolling:
+  history: 50000
+  multiplier: 3
+
+tabspaces: 4
+
+selection:
+  save_to_clipboard: true
+
+mouse:
+  hide_when_typing: true
+
+window:
+  opacity: 0.85
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: false
+  decorations: buttonless
+  startup_mode: SimpleFullscreen
+
+font:
+  normal:
+    family: "Fira Code"
+    style: Regular
+  size: 16.0 
+
+# Import theme
+import:
+  - ~/.config/alacritty/themes/omni.yaml
+
