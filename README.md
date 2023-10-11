@@ -18,6 +18,14 @@ brew install stow
 stow git
 ```
 
+### Binaries
+
+Will be installed in `~/.local/bin`
+
+```sh
+stow bin
+```
+
 ### Alacritty
 
 Install [alacritty](https://alacritty.org):

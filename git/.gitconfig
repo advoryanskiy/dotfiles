@@ -1,8 +1,13 @@
 [user]
-	name = Alexey Dvoryanskiy
-	email = advoryanskiy@gmail.com
+  name = Alexey Dvoryanskiy
+  email = advoryanskiy@gmail.com
+
 [push]
-	default = simple
+  default = simple
+
 [core]
-	excludesfile = /Users/advoryanskiy/.gitignore
-	ignorecase = false
+  excludesfile = ~/.gitignore
+  ignorecase = false
+
+[init]
+  defaultBranch = master
