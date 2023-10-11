@@ -12,6 +12,12 @@ Install [GNU Stow](https://www.gnu.org/software/stow/):
 brew install stow
 ```
 
+### Git configs
+
+```sh
+stow git
+```
+
 ### Alacritty
 
 Install [alacritty](https://alacritty.org):
