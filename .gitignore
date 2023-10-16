@@ -1,0 +1,3 @@
+# Ignore tmux plugins folder
+tmux/.config/tmux/plugins
+

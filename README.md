@@ -40,3 +40,51 @@ Install config:
 stow alacritty
 ```
 
+### Tmux
+
+Install [tmux](https://github.com/tmux/tmux):
+
+```sh
+brew install tmux
+```
+
+Install config:
+
+```sh
+stow tmux
+```
+
+Install [tpm](https://github.com/tmux-plugins/tpm):
+
+```sh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Open tmux config and install plugins:
+
+```sh
+vim ~/.config/tmux/tmux.conf
+# press ctrl+a I
+```
+
+### Zsh
+
+Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh):
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Install plugins:
+
+```sh
+# powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# autosuggestions
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# syntax highlighting
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
