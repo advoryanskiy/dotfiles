@@ -82,6 +82,9 @@ alias vi="nvim"
 alias cp='cp -i'
 alias mv='mv -i'
 
+# Colorized Less
+alias less="cless"
+
 # }}  Aliases
 
 
