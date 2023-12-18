@@ -97,6 +97,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # Brew path
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 
+# Libpq for PostgreSQL client
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
 # }}  Path
 
 
@@ -110,4 +113,13 @@ export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 . ~/.asdf/plugins/java/set-java-home.zsh
 
 # }}  asdf
+
+
+
+# --- Liquibase {{
+
+# Home
+export LIQUIBASE_HOME="/usr/local/opt/liquibase/libexec"
+
+# }}  Liquibase
 

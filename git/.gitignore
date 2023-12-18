@@ -154,3 +154,7 @@ DerivedData/
 # Specififc stuff
 # jasper report output
 *.jasper
+
+# Hidden justfile with dot env
+.justfile
+.env
