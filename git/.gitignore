@@ -151,9 +151,15 @@ DerivedData/
 
 # End of https://www.gitignore.io/api/xcode,macos,intellij+all
 
-# Specififc stuff
+# Specific stuff
 # jasper report output
 *.jasper
+
+# Nvim with java
+.classpath
+.factorypath
+.project
+.settings/
 
 # Hidden justfile with dot env
 .justfile
