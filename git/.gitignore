@@ -164,3 +164,7 @@ DerivedData/
 # Hidden justfile with dot env
 .justfile
 .env
+
+# Hidden helmfile
+.helmfile.yaml
+
