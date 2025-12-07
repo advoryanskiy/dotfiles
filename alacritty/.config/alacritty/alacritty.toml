@@ -1,0 +1,81 @@
+# alacritty.toml
+
+# --- Basic {{
+
+[env]
+# Setup TERM env
+TERM = "xterm-256color"
+
+[scrolling]
+# Number of lines in the scrollback buffer
+history = 50000
+multiplier = 3
+
+[selection]
+# Selected text will be copied to the primary clipboard
+save_to_clipboard = true
+
+[mouse]
+# Cursor will be temporarily hidden when typing
+hide_when_typing = true
+
+# }}  Basic
+
+
+# --- Window Style {{
+
+[window]
+opacity = 0.8
+padding.x = 10
+padding.y = 10
+dynamic_padding = false
+# No title, no buttons
+decorations = "buttonless"
+# Fullscreen without creating new desktop (macos only)
+startup_mode = "SimpleFullscreen"
+
+# }}  Window Style
+
+
+# --- Font {{
+
+[font]
+normal.family = "FiraCode Nerd Font"
+normal.style = "Regular"
+size = 16.0
+
+# }}  Font
+
+
+# --- Cursor {{
+
+[cursor]
+style.shape = "Block"
+style.blinking = "Always"
+vi_mode_style = "Block"
+blink_interval = 600
+unfocused_hollow = true
+thickness = 0.1
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[general]
+# Live reload config
+live_config_reload = true
+
+# }}  Cursor
+
+
+# --- Colors {{
+
+# Import theme
+import = [ "$HOME/.config/alacritty/themes/iterm.yaml" ]
+
+[terminal]
+# On start run tmux with default session
+shell.program = "/bin/zsh"
+shell.args = [ "-c", "/opt/homebrew/bin/tmux new -A -s main" ]
+
+# }}  Colors
+
